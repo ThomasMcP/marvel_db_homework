@@ -66,4 +66,10 @@ UPDATE people SET name = 'Rob Wilson' WHERE name = 'Robin Willson';
 -- SELECT name FROM people WHERE name = 'Thomas McPhee'
 
 DELETE FROM movies WHERE title = 'Batman Begins';
+
+INSERT INTO people (name) VALUES ('Pawel Orzechowski');
+
+DELETE FROM people WHERE name = 'Nick Fury'; 
+
 SELECT * FROM movies;
+SELECT * FROM people;
