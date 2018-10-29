@@ -69,7 +69,14 @@ DELETE FROM movies WHERE title = 'Batman Begins';
 
 INSERT INTO people (name) VALUES ('Pawel Orzechowski');
 
-DELETE FROM people WHERE name = 'Nick Fury'; 
+DELETE FROM people WHERE name = 'Nick Fury';
 
-SELECT * FROM movies;
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
+
+SELECT show_time FROM movies WHERE title = 'Guardians of the Galaxy';
+UPDATE movies SET show_time = '14.30' WHERE title = 'Guardians of the Galaxy 2';
+
+DELETE FROM people WHERE id IN (1, 2, 3);
+
+-- SELECT * FROM movies;
 SELECT * FROM people;
